@@ -3,3 +3,4 @@ et on me modifie dans la branche 2
 ensuite on me modifie encore 
 et on a git merge
 et on refair un checkout sur branche 2
+fin reoslution de conlfit

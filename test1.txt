@@ -12,3 +12,5 @@ new branche test
 ensuite
 
 on creer la feature/seo
+
+pull requese

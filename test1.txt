@@ -10,3 +10,5 @@ Suite
 
 new branche test
 ensuite
+
+on creer la feature/seo

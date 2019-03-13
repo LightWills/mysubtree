@@ -4,6 +4,3 @@
 [submodule "Makefile-Steps"]
 	path = Makefile-Steps
 	url = https://github.com/LightWills/Makefile-Steps
-[submodule "testCircleCI-1"]
-	path = testCircleCI-1
-	url = https://github.com/LightWills/testCircleCI-1

@@ -1,6 +1,0 @@
-[submodule "WebSite_HTML_CSS"]
-	path = WebSite_HTML_CSS
-	url = https://github.com/LightWills/WebSite_HTML_CSS
-[submodule "Makefile-Steps"]
-	path = Makefile-Steps
-	url = https://github.com/LightWills/Makefile-Steps

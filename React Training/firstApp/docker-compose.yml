@@ -3,7 +3,7 @@ version: "3"
 services:
   react-native:
     build: .
-    container_name: react-native
+    container_name: react-native-first-app
     volumes:
       - ./react-native-src:/var/react-native-src
     ports:

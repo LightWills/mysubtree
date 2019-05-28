@@ -3,7 +3,7 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
-import About from './components/about';
+import About from './components/about/About'
 
 export default class App extends React.Component {
   state = {
@@ -27,7 +27,11 @@ export default class App extends React.Component {
     //     </View>
     //   );`
     // }
-    <About /> 
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+        <Text>Hello, world!</Text>
+      </View>
+    );
   }
 
   _loadResourcesAsync = async () => {

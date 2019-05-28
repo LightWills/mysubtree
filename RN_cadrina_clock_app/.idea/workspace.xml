@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="216e01cd-69cf-44b8-bdfe-c4a9ba67d5cf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../React Training/secondapp/src/Board.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../React Training/secondapp/src/Game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../React Training/secondapp/src/Square.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/.buckconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/.flowconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/.watchmanconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/__tests__/App-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/BUCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/build_defs.bzl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/java/com/cadrinaappclockinreactnat/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/java/com/cadrinaappclockinreactnat/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/keystores/BUCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/keystores/debug.keystore.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/android/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat-tvOS/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat-tvOSTests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat.xcodeproj/xcshareddata/xcschemes/CadrinaAppClockInReactNat-tvOS.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat.xcodeproj/xcshareddata/xcschemes/CadrinaAppClockInReactNat.xcscheme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat/Base.lproj/LaunchScreen.xib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat/Images.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat/Images.xcassets/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNat/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNatTests/CadrinaAppClockInReactNatTests.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/ios/CadrinaAppClockInReactNatTests/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/metro.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadrinaAppClockInReactNat/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React Training/secondapp/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../React Training/secondapp/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../React Training/secondapp/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../React Training/secondapp/src/App.js" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RN_cadrina_clock_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RN_cadrina_clock_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
+    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="" />
+    <property name="nodejs.protractor.protractor_package" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="216e01cd-69cf-44b8-bdfe-c4a9ba67d5cf" name="Default Changelist" comment="" />
+      <created>1558997215047</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558997215047</updated>
+      <workItem from="1558997218091" duration="244000" />
+      <workItem from="1559029229382" duration="1021000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1265000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32891566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

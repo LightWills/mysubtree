@@ -1,10 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Game from 'Game';
 
 function App() {
   return (
     <div className="App">
+      ReactDOM.render(
+      <Game/>,
+      document.getElementById('root')
+      );
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,6 +22,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+
         </a>
       </header>
     </div>

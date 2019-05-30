@@ -3,7 +3,9 @@ import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 
-import About from './components/about/About'
+
+// impor of navigators
+import MyTabNavigator from './components/navigator/homeToabout'
 
 export default class App extends React.Component {
   state = {
@@ -28,7 +30,7 @@ export default class App extends React.Component {
     //   );`
     // }
     return (
-      <About /> 
+      <MyTabNavigator /> 
     );
   }
 

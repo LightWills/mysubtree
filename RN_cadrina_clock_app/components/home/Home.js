@@ -3,7 +3,7 @@ import { Text, View , StyleSheet, ActivityIndicator } from 'react-native';
 
 
 
-export default class About extends React.Component {
+export default class Home extends React.Component {
 
     constructor(props) {
         super(props);
@@ -13,10 +13,10 @@ export default class About extends React.Component {
     render (){
         return (
             <View style={aboutStyle.conatiner}>
-                <Text>Cadrina Clock APP</Text>
-                <ActivityIndicator color="#348765" size="large" animating={true}/>
+                <Text>Home View</Text>
+            
                 
-                <Text>For You</Text>
+            
 
             </View>
         );

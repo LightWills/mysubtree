@@ -5,12 +5,11 @@ import Home from '../home/Home';
 import { Ionicons } from '@expo/vector-icons'; // 6.2.2
 import React from 'react';
 import { Platform, StatusBar, StyleSheet, View, Text } from 'react-native';
-import MyConfig from '../../myConfig/styles_color';
+import * as myConfig from '../../myConfig/styles_color';
 
 /**
  * This class is using for switnig in a view to another view
  */
-const config = new MyConfig();
 class IconWithBadge extends React.Component {
     render() {
       const { name, badgeCount, color, size } = this.props;
@@ -45,6 +44,7 @@ class IconWithBadge extends React.Component {
   
   const HomeIconWithBadge = props => {
     // You should pass down the badgeCount in some other ways like context, redux, mobx or event emitters.
+    // https://ionicons.com/cheatsheet.html
     return <IconWithBadge {...props} badgeCount={3} />;
   };
 const getTabBarIcon = (navigation, focused, tintColor) => {
@@ -75,8 +75,9 @@ const MyTabNavigator = createBottomTabNavigator(
         getTabBarIcon(navigation, focused, tintColor),
     }),
     tabBarOptions: {
-      activeTintColor: "black" ,
-      inactiveTintColor: config.baseColorButtonInactive ,
+      activeTintColor: myConfig.baseColorButtonActive ,
+      inactiveTintColor: myConfig.baseColorButtonInactive ,
+      showLabel: false
     },
   }
   );

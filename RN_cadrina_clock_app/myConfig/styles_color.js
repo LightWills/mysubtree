@@ -7,16 +7,16 @@
 |--------------------------------------------------
 */
 
-export default class MyConfig {
-    // const {baseColorButton} = "black";
-    // this.props.baseColorButton  = "black";
-    // const var baseColorButton = "black"
-    constructor() {
-    const  baseColorButtonActive = "black"
-    const  baseColorButtonInactive= "gray"
+const backgroud = "black";
+const textColor = "white;"
 
-         
-    }
+const  baseColorButtonActive = "black"
+const  baseColorButtonInactive= "gray"
 
+export {
+    backgroud,
+    textColor,
+    baseColorButtonActive,
+    baseColorButtonInactive
 }
 

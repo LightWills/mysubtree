@@ -54,9 +54,7 @@ import Result from '../search/Result'
 
     static navigationOptions = {
         title: 'Search your city',
-        color: "red"
-       
-    }
+        }
 }
 
 const searchStyle = StyleSheet.create({
@@ -77,19 +75,36 @@ const searchStyle = StyleSheet.create({
         fontSize: 15,
         margin: 20
     },
-    titleSearch: {
-        color: myConfig.titleHearderSearchBar
+    header: {
+        backgroundColor: myConfig.buttonbackgroudSearchweather,
+        color: 'white'        
+   
+    },
+    headerTitle: {
+        color: myConfig.textColor,
+        color : 'white'
    
     }
 
 })
 
+const navigationOptions = {
+    headerStyle : searchStyle.header,
+    headerTitleStyle: searchStyle.headerTitle,
+    headerTintColor: myConfig.textColor
+    
+
+}
+
+
 const searchStack =  createStackNavigator({
     Search: {
       screen: Search,
+      navigationOptions
     },
     Result: {
-      screen: Result, 
+      screen: Result,
+      navigationOptions 
     }
   })
   
@@ -103,6 +118,7 @@ const searchStack =  createStackNavigator({
             title: 'Rec',
             tabBarVisible: false
           },
+          navigationOptions
       
       /* Other configuration remains unchanged */
     }

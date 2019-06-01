@@ -10,7 +10,7 @@ export default class About extends React.Component {
       
     searchWeather()
     {
-        this.props.navigation.goBack()         
+        this.props.navigation.navigate('Weather')         
     }
 
     render (){

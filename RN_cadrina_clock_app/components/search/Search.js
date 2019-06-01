@@ -21,8 +21,6 @@ export default class Search extends React.Component {
     }
     getCity(text)
     { 
-        if(text == null || text == "" )
-            return this.props.city
         return this.state.city
     }
 

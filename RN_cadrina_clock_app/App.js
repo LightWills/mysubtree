@@ -29,6 +29,9 @@ export default class App extends React.Component {
     //     </View>
     //   );`
     // }
+    // return (
+    //   <MyTabNavigator /> 
+    // ); 
     return (
       <MyTabNavigator /> 
     );

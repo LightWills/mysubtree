@@ -14,10 +14,6 @@ export default class Home extends React.Component {
         return (
             <View style={aboutStyle.conatiner}>
                 <Text>Home View</Text>
-            
-                
-            
-
             </View>
         );
     };

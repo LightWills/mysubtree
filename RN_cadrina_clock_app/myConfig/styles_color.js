@@ -20,6 +20,14 @@ const  backgroundColorInactive= "#041725";
 const borderColor = 'red';
 
 
+/**
+|--------------------------------------------------
+| Search style in Search style component
+|--------------------------------------------------
+*/
+const buttonbackgroudSearchweather = "#041725";
+const titleHearderSearchBar = "#041725";
+
 export {
     backgroud,
     textColor,
@@ -28,6 +36,8 @@ export {
     backgroundColorActive,
     backgroundColorInactive,
     borderColor,
+    buttonbackgroudSearchweather,
+    titleHearderSearchBar
 
 }
 

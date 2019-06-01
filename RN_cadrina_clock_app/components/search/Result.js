@@ -5,9 +5,13 @@ import { Text, View , StyleSheet, ActivityIndicator } from 'react-native';
 
 export default class Result extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {  
+        super(props);
+        this.state ={
+            city : this.props.navigation.state.params.city,
+            data : null
+        }
+    }
       
 
     render (){
@@ -22,8 +26,11 @@ export default class Result extends React.Component {
         );
     };
 
-    static navigationOptions = {
-        title: "Weather"
+    static navigationOptions = (params) => {
+        
+        return {
+            title: `Weather / ${params.navigation.state.params.city} `
+        }
        
     }
   

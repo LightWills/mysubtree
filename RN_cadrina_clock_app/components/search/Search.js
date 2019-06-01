@@ -27,7 +27,7 @@ import Result from '../search/Result'
     }
     
     search(){
-         this.props.navigation.navigate('Result', {city: this.props.city})
+         this.props.navigation.navigate('Result', {city:this.state.city})
     }
 
     render(){

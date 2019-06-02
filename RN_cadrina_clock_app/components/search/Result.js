@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View , StyleSheet, ActivityIndicator } from 'react-native';
+import { Text, View , StyleSheet, ActivityIndicator, ListView } from 'react-native';
 import axios from 'axios';
 
 
@@ -7,30 +7,34 @@ export default class Result extends React.Component {
 
     constructor(props) {  
         super(props);
+        const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+
         this.state ={
             // city : this.props.navigation.state.params.city,
             city : 'Paris',
-            data : null
+            dataSource : new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
         }
+        this.fetchWeather()
     }
       
     fetchWeather()
     {
-        let api_url = `https://samples.openweathermap.org/data/2.5/weather?q=${this.state.city},uk&appid=b6907d289e10d714a6e88b30761fae22`;
+        let appiKey = '6eed9f9486ee2e65da7418db742043be'
+        let api_url = `
+        http://api.openweathermap.org/data/2.5/forecast/daily?q=${this.state.city}&mode=json&units=metric&cnt=7&appid=${appiKey}
+        `;
         axios.get(api_url)
              .then(response => {
-                this.setState({ data: response.data });
+                //  var paterns = new Array()
+                //  response.data.listforEach(element => {
+                     
+                //  });
+                this.setState({ dataSource: this.state.dataSource.cloneWithRows (response.data.list) });
               })
     }
     render (){
-        let api_url = `https://samples.openweathermap.org/data/2.5/weather?q=${this.state.city},uk&appid=b6907d289e10d714a6e88b30761fae22`;
-        axios.get(api_url)
-             .then(response => {
-                this.setState({ data: response.data });
-                console.log(this.state.data);
-                
-              })
-        if(this.state.data === null   || this.state.data === undefined  )
+      
+        if(this.state.dataSource === null   || this.state.dataSource === undefined  )
             {
                 return (
             
@@ -41,11 +45,14 @@ export default class Result extends React.Component {
             } 
             else
             {
+           
                 return (
             
-                    <View style={aboutStyle.conatiner}>
-                        <Text>Result</Text>
-                    </View>
+                    <ListView>
+                        dataSource= {this.state.dataSource}
+                        renderItem={({item}) => <Text >{item.temp.day}</Text>}
+                    </ListView>
+                    
                 );
                 
             }

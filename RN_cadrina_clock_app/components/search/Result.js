@@ -1,7 +1,8 @@
 import React from 'react'
 import { Text, View , StyleSheet, ActivityIndicator, ListView, FlatList, List } from 'react-native';
 import axios from 'axios';
-
+import * as myConfig from '../../myConfig/styles_color';
+import Row from './Row';
 export default class Result extends React.Component {
 
     constructor(props) {  
@@ -97,13 +98,14 @@ export default class Result extends React.Component {
             (
                     
                 <View style={styles.container}>
-                                <Text>tata</Text>
-
                     <FlatList
                     data={
                         this.state.dataSource.list 
                     }
-                    renderItem={({item}) => <Text style={styles.item}>{item.rain}</Text>}
+                    renderItem={
+                        ({item, index}) => <Row style={styles.item} day= {item} index={parseInt(index, 10)} ></Row>
+                    }
+                    keyExtractor={(item, index) => index.toString()}  
                     />
                 </View>  
 
@@ -114,7 +116,7 @@ export default class Result extends React.Component {
 
             return (
                 <View style={[resultStyle.sndContainer, resultStyle.horizontal]} >
-                  <ActivityIndicator size="large" color="#0000ff" />
+                  <ActivityIndicator size="large" color={myConfig.backgroundColorActive} />
                 </View>
               )
         }

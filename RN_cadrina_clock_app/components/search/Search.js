@@ -36,6 +36,7 @@ import Result from '../search/Result'
             <TextInput
                 underlineColorAndroid ='transparent'
                 onChangeText ={(text) => this.setCity(text)}
+                onSubmitEditing ={() => this.search()}
                 value =  { this.state.city}
                 style = {searchStyle.mytextInput}
 

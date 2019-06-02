@@ -3,8 +3,7 @@ import { Text, View , StyleSheet } from 'react-native';
 import PropTypes from 'prop-types';
 import moment from 'moment'
 import { Ionicons } from '@expo/vector-icons'; // 6.2.2
-
-
+import MyAnimation from '../../animation/myanimation'
 export default class Row extends React.Component {
 
     //get a specifique type at the props  
@@ -61,39 +60,42 @@ export default class Row extends React.Component {
         if(this.props.index === 0)
         {
             return (
-           
-                <View style= {[ rowStyle.flex,rowStyle.view, rowStyle.firstView]}>
-                    <View >
-                        <Text style= {{color: '#FFF'}}>
-                            {this.getDay()} {this.getDate()}
+                <MyAnimation delay= {this.props.index * 30} >
+                     <View style= {[ rowStyle.flex,rowStyle.view, rowStyle.firstView]}>
+                        <View >
+                            <Text style= {{color: '#FFF'}}>
+                                {this.getDay()} {this.getDate()}
+                            </Text>
+
+                            {this.icon(90)}
+
+                    
+                        </View>
+                            <Text style={[rowStyle.temperature, {fontSize: 35}]} >
+                                {Math.round(this.props.day.temp.day)} °C
                         </Text>
-
-                        {this.icon(90)}
-
-                   
                     </View>
-                        <Text style={[rowStyle.temperature, {fontSize: 35}]} >
-                            {Math.round(this.props.day.temp.day)} °C
-                        </Text>
-                </View>
+                </MyAnimation>
             )
         }
         else
         {
             return (
-           
-                <View style= {[ rowStyle.flex,rowStyle.view]}>
-                    <View style={rowStyle.flex}>
-                        {this.icon(50)}
+                <MyAnimation delay= {this.props.index * 30} > 
+                    <View style= {[ rowStyle.flex,rowStyle.view]}>
+                        <View style={rowStyle.flex}>
+                            {this.icon(50)}
 
-                        <Text style= {rowStyle.date_and_day}>
-                        {this.getDay()} {this.getDate()}
+                            <Text style= {rowStyle.date_and_day}>
+                            {this.getDay()} {this.getDate()}
+                            </Text>
+                        </View>
+                        <Text style={rowStyle.temperature} >
+                            {Math.round(this.props.day.temp.day)} °C
                         </Text>
                     </View>
-                    <Text style={rowStyle.temperature} >
-                        {Math.round(this.props.day.temp.day)} °C
-                    </Text>
-                </View>
+
+                </MyAnimation>  
             )
 
            
@@ -126,7 +128,7 @@ const rowStyle = StyleSheet.create({
     item: {
       padding: 10,
       fontSize: 18,
-      height: 60,
+      height: 80,
     },
     temperature: {
         color: 'white',

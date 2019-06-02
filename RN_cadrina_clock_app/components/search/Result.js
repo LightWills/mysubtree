@@ -63,6 +63,7 @@ export default class Result extends React.Component {
     }
 
     async componentDidMount() {
+    
         try {
             console.log("before");
             var appiKey = '6eed9f9486ee2e65da7418db742043be'
@@ -72,7 +73,9 @@ export default class Result extends React.Component {
             
             const response = await fetch(api_url);
             const json = await response.json();
-            this.setState({ dataSource: json , error: false, loading: true});
+            setTimeout((index) => {
+                this.setState({ dataSource: json , error: false, loading: true});
+            }, 1000);
 
             console.log("after");
 

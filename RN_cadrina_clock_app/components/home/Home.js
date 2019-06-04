@@ -13,10 +13,8 @@ export default class Home extends React.Component {
      componentDidMount() {
         if(this.state.data === 0)
             {
-                  setTimeout((index) => {
-                    this.setState({ data: 1});
-                }, 1000);
-    
+                this.setState({ data: 1});
+
             }
            
       }

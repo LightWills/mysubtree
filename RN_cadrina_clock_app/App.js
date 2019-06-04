@@ -3,6 +3,8 @@ import { Platform, StatusBar, StyleSheet, View , Text} from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
 import * as FirebaseConfig from './data/config_db'
+import * as myConfig from './myConfig/styles_color';
+
 import firebase from 'firebase';
 
 // impor of navigators
@@ -120,16 +122,16 @@ export default class App extends React.Component {
   };
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
-const aboutStyle = StyleSheet.create({
-  conatiner: {
-      flex: 1,
-      justifyContent: "center", 
-      alignItems: "center"
-  }
-})
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//   },
+// });
+// const aboutStyle = StyleSheet.create({
+//   conatiner: {
+//       flex: 1,
+//       justifyContent: "center", 
+//       alignItems: "center"
+//   }
+// })

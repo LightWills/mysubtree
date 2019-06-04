@@ -95,7 +95,7 @@ export default class Result extends React.Component {
             return (this.state.dataSource.length ? 
             (
                 <View >
-                    <Text>toto</Text>
+                    <Text>NULL</Text>
                 </View>
             ) : 
             (

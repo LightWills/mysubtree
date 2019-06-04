@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View , StyleSheet, ActivityIndicator } from 'react-native';
+import { Text, View , StyleSheet, ActivityIndicator, FlatList } from 'react-native';
 import * as FirebaseConfig from '../../data/config_db'
 import firebase from 'firebase';
 
@@ -62,9 +62,18 @@ export default class Home extends React.Component {
         {
         
             return (
-                <View style={aboutStyle.conatiner}>
-                    <Text>Set state change </Text>
-                </View>
+                
+                <View style={aboutStyle.container}>
+                    <FlatList
+                        data={
+                            this.state.data
+                        }
+                        renderItem={
+                            ({item, index}) => <Text> {item.user}</Text>
+                        }
+                        keyExtractor={(item, index) => index.toString()}  
+                    />
+            </View>  
             );
             
         }
@@ -72,7 +81,7 @@ export default class Home extends React.Component {
         {
             return (
                 <View style={aboutStyle.conatiner}>
-                    <Text>Home View - nothing chnaged</Text>
+                    <Text>Home View - nothing data</Text>
                 </View>
             );
         }
@@ -88,3 +97,14 @@ const aboutStyle = StyleSheet.create({
         alignItems: "center"
     }
 })
+const styles = StyleSheet.create({
+    container: {
+     flex: 1,
+     paddingTop: 22
+    },
+    item: {
+      padding: 10,
+      fontSize: 18,
+      height: 44,
+    },
+  })

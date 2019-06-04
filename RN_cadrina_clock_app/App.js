@@ -1,60 +1,98 @@
 import React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, StyleSheet, View , Text} from 'react-native';
 import { AppLoading, Asset, Font, Icon } from 'expo';
 import AppNavigator from './navigation/AppNavigator';
-
+import * as FirebaseConfig from './data/config_db'
+import firebase from 'firebase';
 
 // impor of navigators
 import MyTabNavigator from './components/navigator/homeToabout'
 
 export default class App extends React.Component {
-  // state = {
-  //   isLoadingComplete: false, 
-  //   data: 0
-  // };
+  state = {
+    isLoadingComplete: false,
+    loading: false,
+    dataAlarm: []
+  };
+
   
-  
-  constructor(props)
+
+  add()
   {
-    super(props);
-    // this.setState({ isLoadingComplete: true });
-    // this.setStasate= {
-    //   data: 1
-    // }
+    var newPostKey = firebase
+      .database()
+      .ref()
+      .child(FirebaseConfig.myTableName)
+      .push().key;
+
+    var updates = {};
+      updates["/" +FirebaseConfig.myTableName +"/" + newPostKey] = {
+        name: 'test'
+      };
+    firebase.database().ref().update(updates)
+      .then(() => {
+          console.log('INSERTED !');
+      }).catch((error) => {
+          console.log(error);
+      });
+  }
+
+ 
+
+  
+
+  
+    constructor(props) {
+      super(props);
+    
+  }
+
    
 
-  }
 
-  render() {
-
-    // console.log('render');
-    // // this.setState({ isLoadingComplete: true });
-    // console.log(this.state);
-    // if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
-    //   return (
-    //     <AppLoading
-    //       startAsync={this._loadResourcesAsync}
-    //       onError={this._handleLoadingError}
-    //       onFinish={this._handleFinishLoading}
-    //     />
-    //   );
-    // } else {
-    //   return (
-    //     <View style={styles.container}>
-    //       {Platform.OS === 'ios' && <StatusBar barStyle="default" />}
-    //       <AppNavigator />
-    //     </View>
-    //   );`
-    // }
-    // return (
-    //   <MyTabNavigator /> 
-    // ); 
+         
     
 
-    return (
+  
+     
+
+  render() {
+       
+    console.log('render');
+    // this.setState({ isLoadingComplete: true });
+    return(
       <MyTabNavigator /> 
-    );
+    )
+  
   }
+
+  // render() {
+  //   console.log(this.state)
+  //   if(this.state.loading === false)
+  //   {
+  //     return(
+  //       <Text>
+  //           Chargement
+  //         </Text>
+  //     )    
+  //   }
+  //   else
+  //   {
+  //     console.log('here-----------------------------------------------');
+  //     console.log(this.state.dataAlarm)
+  //     return(
+  //       <Text>
+  //          <h3> {this.state.dataAlarm[0].min}  ></h3>
+  //         </Text>
+  //     )  
+  //   }
+ 
+ 
+  //   // return (
+  //   //   <MyTabNavigator /> 
+  //   // );
+
+  // }
 
   _loadResourcesAsync = async () => {
     return Promise.all([
@@ -89,3 +127,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
+const aboutStyle = StyleSheet.create({
+  conatiner: {
+      flex: 1,
+      justifyContent: "center", 
+      alignItems: "center"
+  }
+})

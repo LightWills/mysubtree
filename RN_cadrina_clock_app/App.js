@@ -8,11 +8,28 @@ import AppNavigator from './navigation/AppNavigator';
 import MyTabNavigator from './components/navigator/homeToabout'
 
 export default class App extends React.Component {
-  state = {
-    isLoadingComplete: false,
-  };
+  // state = {
+  //   isLoadingComplete: false, 
+  //   data: 0
+  // };
+  
+  
+  constructor(props)
+  {
+    super(props);
+    // this.setState({ isLoadingComplete: true });
+    // this.setStasate= {
+    //   data: 1
+    // }
+   
+
+  }
 
   render() {
+
+    // console.log('render');
+    // // this.setState({ isLoadingComplete: true });
+    // console.log(this.state);
     // if (!this.state.isLoadingComplete && !this.props.skipLoadingScreen) {
     //   return (
     //     <AppLoading
@@ -32,6 +49,8 @@ export default class App extends React.Component {
     // return (
     //   <MyTabNavigator /> 
     // ); 
+    
+
     return (
       <MyTabNavigator /> 
     );

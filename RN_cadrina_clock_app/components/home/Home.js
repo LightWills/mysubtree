@@ -5,18 +5,62 @@ import { Text, View , StyleSheet, ActivityIndicator } from 'react-native';
 
 export default class Home extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    // }
+    constructor(props) {
+        super(props);
+      
+    }
+
+     componentDidMount() {
+        if(this.state.data === 0)
+            {
+                  setTimeout((index) => {
+                    this.setState({ data: 1});
+                }, 1000);
+    
+            }
+           
+      }
+    state = {
+        isLoadingComplete: false, 
+        data: 0
+      };
+
+      
+    _updateMyData()
+    {
+        if(this.state.data === 0)
+        {
+            this.setState({ data: 1});
+
+             
+        }
+
+    }
       
 
     render (){
-        return (
+         
+    console.log('render');
+    // this.setState({ isLoadingComplete: true });
+    if(this.state.data === 1)
+    {
+      
+          return (
             <View style={aboutStyle.conatiner}>
-                <Text>Home View</Text>
+                <Text>Set state change </Text>
             </View>
         );
-    };
+         
+    }
+    else
+    {
+        return (
+            <View style={aboutStyle.conatiner}>
+                <Text>Home View - nothing chnaged</Text>
+            </View>
+        );
+    }
+    }
 
 
   

@@ -4,11 +4,13 @@ import PropTypes from 'prop-types';
 import moment from 'moment'
 import { Ionicons } from '@expo/vector-icons'; // 6.2.2
 import MyAnimation from '../../animation/myanimation'
+
 export default class Row extends React.Component {
 
     //get a specifique type at the props  
     static propTypes ={
         day: PropTypes.object,
+        alarm: PropTypes.object,
         index: PropTypes.number
     }
 
@@ -33,20 +35,25 @@ export default class Row extends React.Component {
     }
 
     icon (size) {
-         const type = this.props.day.weather[0].main.toLowerCase();
-        let name ;
-        switch (type) {
-            case 'clouds':
-                name = `ios-cloud`;
-                break;
-            case 'rain':
-                name = `ios-rainy`;
-                break;
-            default:
-                name = 'ios-sunny';
-                break;
+        if(this.props.alarm == undefined && (this.props.day !=undefined )  )
+        {  
+            const type = this.props.day.weather[0].main.toLowerCase();
+            let name ;
+            switch (type) {
+                case 'clouds':
+                    name = `ios-cloud`;
+                    break;
+                case 'rain':
+                    name = `ios-rainy`;
+                    break;
+                default:
+                    name = 'ios-sunny';
+                    break;
+            }
+            return  <Ionicons name={name} size={size} color='blue' />;
+
         }
-        return  <Ionicons name={name} size={size} color='blue' />;
+         
 
         // return (
         // <Text>
@@ -57,6 +64,8 @@ export default class Row extends React.Component {
     }
 
     render(){
+      if(this.props.alarm == undefined && (this.props.day !=undefined )  )
+      {
         if(this.props.index === 0)
         {
             return (
@@ -80,6 +89,8 @@ export default class Row extends React.Component {
         }
         else
         {
+
+            
             return (
                 <MyAnimation delay= {this.props.index * 30} > 
                     <View style= {[ rowStyle.flex,rowStyle.view]}>
@@ -101,6 +112,34 @@ export default class Row extends React.Component {
            
 
         }
+      }
+      else
+      {
+        console.log(this.props.alarm)
+
+        return (
+            <MyAnimation delay= {this.props.index * 30} > 
+                <View style= {[ rowStyle.flex,rowStyle.view, rowStyle.alarm_view]}>
+                    <View style={rowStyle.flex}>
+                        {this.icon(50)}
+
+                        <Text style= {rowStyle.date_and_day}>
+                        {this.props.alarm.user}
+                        {this.props.alarm.heure} : {this.props.alarm.min}
+
+                        </Text>
+                    </View>
+                    <Text style={rowStyle.temperature} >
+                    {this.props.alarm.enabled}
+
+                    </Text>
+                </View>
+
+            </MyAnimation>  
+          
+      
+        )
+      }
        
     }
 
@@ -116,6 +155,9 @@ const rowStyle = StyleSheet.create({
      paddingVertical:  10,
      justifyContent: 'space-between',
  
+    },
+    alarm_view : {
+        marginTop: 10
     },
     firstView:{
         backgroundColor: 'red',

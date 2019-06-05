@@ -39,26 +39,13 @@ export default class App extends React.Component {
       });
   }
 
- 
-
-  
-
-  
+   
     constructor(props) {
       super(props);
     
   }
 
-   
-
-
-         
-    
-
-  
-     
-
-  render() {
+    render() {
        
     // this.setState({ isLoadingComplete: true });
     return(

@@ -1,7 +1,11 @@
 import React from 'react'
-import { Text, View , StyleSheet, ActivityIndicator, FlatList } from 'react-native';
+import { Text, View , StyleSheet, ActivityIndicator, FlatList ,
+    createStackNavigator , createAppContainer, createBottomTabNavigator
+} from 'react-native';
 import * as FirebaseConfig from '../../data/config_db'
 import firebase from 'firebase';
+import Row from '../search/Row'
+import * as myConfig from '../../myConfig/styles_color';
 
 
 export default class Home extends React.Component {
@@ -13,40 +17,38 @@ export default class Home extends React.Component {
     }
 
     componentDidMount() {
-        {
-              setTimeout((index) => {
-                var tasks = [];
-                const ref = firebase.database().ref(FirebaseConfig.myTableName);
-                ref.on("value",(dataSnapshot)  => {
+        setTimeout((index) => {
+            var tasks = [];
+            const ref = firebase.database().ref(FirebaseConfig.myTableName);
+            ref.on("value",(dataSnapshot)  => {
 
-                    dataSnapshot.forEach(child => {
-                        tasks.push({
-                          enabled: child.val().enabled,
-                          heure: child.val().heure,
-                          min: child.val().min,
-                          user: child.val().user,
-                          key: child.key
-                        });
-                      });
+                dataSnapshot.forEach(child => {
+                    tasks.push({
+                      enabled: child.val().enabled,
+                      heure: child.val().heure,
+                      min: child.val().min,
+                      user: child.val().user,
+                      key: child.key
+                    });
+                  });
 
-                    this.setState({
-                        data: tasks,
-                        loading : true
-                      });  
-                // console.log(dataSnapshot.val());
-                // console.log(tasks);
-                // console.log();
-                // console.log();
-                console.log(this.state.data);
+                this.setState({
+                    data: tasks,
+                    loading : true
+                  });  
+            // console.log(dataSnapshot.val());
+            // console.log(tasks);
+            // console.log();
+            // console.log();
+            // console.log(this.state.data);
+            
 
 
-                });
-                
-                 
-            }, 1000);
+            });
+            
+             
+        }, 1000);
 
-        }
-           
       }
     state = {
         loading: false,
@@ -69,7 +71,8 @@ export default class Home extends React.Component {
                             this.state.data
                         }
                         renderItem={
-                            ({item, index}) => <Text> {item.user}</Text>
+                            ({item, index}) => <Row style={styles.item}  alarm= {item} index={parseInt(index, 10)} ></Row>
+                            // ({item, index}) => <Text>{item.user}</Text>
                         }
                         keyExtractor={(item, index) => index.toString()}  
                     />
@@ -87,7 +90,9 @@ export default class Home extends React.Component {
         }
     }
 
-
+    static navigationOptions = {
+        title: 'Alarm',
+        }
   
 }
 const aboutStyle = StyleSheet.create({
@@ -107,4 +112,25 @@ const styles = StyleSheet.create({
       fontSize: 18,
       height: 44,
     },
+    header: {
+        backgroundColor: myConfig.buttonbackgroudSearchweather,
+        color: 'white'        
+   
+    },
+    headerTitle: {
+        color: myConfig.textColor,
+        color : 'white'
+   
+    }
+
   })
+
+
+const navigationOptions = {
+    headerStyle : styles.header,
+    headerTitleStyle: styles.headerTitle,
+    headerTintColor: myConfig.textColor
+    
+
+}
+

@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="216e01cd-69cf-44b8-bdfe-c4a9ba67d5cf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AwesomeApp/android/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AwesomeApp/android/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/Math-Alarm/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alamr  kt/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alamr  kt/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/alamr  kt/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alamr  kt/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/alamr  kt/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alamr  kt/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/alamr  kt/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alamr  kt/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/alamr  kt/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alarm/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/alarm/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alarm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/alarm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/alarm/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/alarm/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AwesomeApp/android-RepeatingAlarm/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AwesomeApp/android-RepeatingAlarm/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,8 +34,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="995">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            <state relative-caret-position="360">
+              <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -111,14 +126,16 @@
       <workItem from="1558997218091" duration="244000" />
       <workItem from="1559029229382" duration="1021000" />
       <workItem from="1560181651620" duration="3000" />
+      <workItem from="1560189036504" duration="51000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1268000" />
+    <option name="totallyTimeSpent" value="1319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -146,8 +163,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="995">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        <state relative-caret-position="360">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

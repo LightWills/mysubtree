@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AwesomeApp/Math-Alarm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AwesomeApp/Simple-Alarms" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AwesomeApp/alamr  kt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AwesomeApp/alarm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AwesomeApp/android-RepeatingAlarm" vcs="Git" />
   </component>
 </project>

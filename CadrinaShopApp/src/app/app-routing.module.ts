@@ -4,7 +4,7 @@ import {OrderComponent} from './orders/order/order.component';
 import {RouterModule, Routes} from '@angular/router';
 import {OrdersComponent} from './orders/orders.component';
 
-const routes: Routes = [
+const appRoutes: Routes = [
   { path: '', redirectTo: 'order', pathMatch: 'full'},
   { path: 'orders', component: OrdersComponent },
   { path: 'order', children: [
@@ -17,7 +17,9 @@ const routes: Routes = [
   declarations: [],
   imports: [
     CommonModule,
-    RouterModule.forRoot(routes)
-  ]
+    RouterModule.forRoot(appRoutes)
+  ],
+  exports: [RouterModule]
+
 })
 export class AppRoutingModule { }

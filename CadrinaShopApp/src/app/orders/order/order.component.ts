@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {OrderService} from '../../shared/service/order.service';
+import {NgForm} from '@angular/forms';
 
 @Component({
   selector: 'app-order',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: OrderService) { }
 
   ngOnInit() {
+    this.resetForm();
   }
-
+  resetForm(form?: NgForm) {
+    if (form === null) {
+      form.resetForm();
+    }
+    this.service.formData = {
+      OrderID: null,
+      OrderNO: Math.floor(100000 + Math.random() * 900000).toString(),
+      customerID: 0,
+      PMethod: '',
+      GTotal: 0,
+    };
+  }
 }

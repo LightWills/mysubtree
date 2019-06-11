@@ -8,6 +8,9 @@ import { OrderItemsComponent } from './orders/order-items/order-items.component'
 import { AppRoutingModule } from './app-routing.module';
 import {OrderService} from './shared/service/order.service';
 import {FormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -19,8 +22,12 @@ import {FormsModule} from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+
   ],
+  entryComponents: [OrderItemsComponent],
   providers: [OrderService ],
   bootstrap: [AppComponent]
 })

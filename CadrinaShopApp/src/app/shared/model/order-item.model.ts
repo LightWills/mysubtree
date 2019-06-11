@@ -4,4 +4,7 @@ export class OrderItem {
   orderID: number;
   itemID: number;
   quantity: number;
+  ItemName: string;
+  Price: number;
+  Total: number;
 }
